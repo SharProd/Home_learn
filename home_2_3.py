@@ -1,7 +1,7 @@
 #Напишите проверку на то, является ли строка палиндромом.
 
-String = input('Write string: ')
-if String == ''.join(reversed(String)):
+string = input('Write string: ')
+if string == string[::-1] :
     print('Строка полиндром')
 else:
     print('Строка не полиндром')
