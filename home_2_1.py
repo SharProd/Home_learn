@@ -2,14 +2,17 @@
 #Составьте список и кортеж с этими числами.
 # один из вариантов решения
 
+# пробовал метод split(), в данном случае он не коректно работает,
+# а именно ему нужен разделитель, если его не указать( split()) получается ["строка"],
+# а если указать ("") в разделителе , то выбивает ошибку. Метод хорош при разбиении по словам.
+
 input_string = input("write number: ")
-List = list()
+input_string_in_list = list()
 
 for item in input_string:
-    List.append(item)
-    if item == ",":
-        List.remove(item)
+    input_string_in_list.append(item)
 
-Tuple = tuple(List)
-print(List, type(List))
-print(Tuple,type(Tuple))
+input_string_in_tuple = tuple(input_string_in_list)
+
+print(input_string_in_list, type(input_string_in_list))
+print(input_string_in_tuple,type(input_string_in_tuple))

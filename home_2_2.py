@@ -4,7 +4,7 @@ while True:
     try:
         number = int(input('Введите Целое число: '))
         break
-    except Exception as ex:
+    except ValueError as ex:
         print('Введите число!!!',ex)
 
 if number%2==0:
