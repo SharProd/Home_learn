@@ -8,7 +8,7 @@ while True:
         print(string, ' - Ваша строка после удаления символов.')
         break
     elif len(string)==2:
-        string = " "
+        string = string[1:-1]
         print(string, ' - Вы ввели два символа, после удаления строка пуста.')
         break
     else:
