@@ -26,6 +26,3 @@ else:
             result_number_else += item ** (len(list_number))
             if i == result_number_else:
                 print('Ближайшие числа нарцисс - ',result_number_else)
-
-
-
