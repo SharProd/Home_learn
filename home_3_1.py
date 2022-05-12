@@ -15,6 +15,8 @@ while True:
         print('Вы должны ввести именно целое число!')
 
 list_number =list(i for i in range(first_number,last_number +1))
-for item in list_number:
-    if item%5!=0:
-        print(item)
+print('Количество чисел не кратных пяти на этом промежутке - ', end = '')
+for i in list_number:
+    if i%5==0:
+        list_number.remove(i)
+print(len(list_number))
