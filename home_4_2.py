@@ -16,4 +16,4 @@ dict_person = {'name' : 'Ivan' ,
 print('Start dictionary: \n ', dict_person,'\n','id [dict_person] :', id(dict_person))
 dict_person['new_key'] = 'new_value'
 dict_person.pop('surname')
-print('Start dictionary: \n ', dict_person,'\n','id [dict_person] :', id(dict_person))
+print('Finish dictionary: \n ', dict_person,'\n','id [dict_person] :', id(dict_person))

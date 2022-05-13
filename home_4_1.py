@@ -6,4 +6,4 @@ input_number = input('Введите числа через запятую : ')
 list_number = input_number.split(',')
 dict_number = dict(zip(list_number,list_number))
 print(dict_number)
-print(list_number)
+
