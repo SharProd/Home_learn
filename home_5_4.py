@@ -4,6 +4,6 @@ number_arr = number.split(',')
 number_arr.sort(key = lambda i:i[0],reverse=True)
 max_string_number = ''.join(number_arr)
 
-
+print(number_arr)
 print(max_string_number)
 
