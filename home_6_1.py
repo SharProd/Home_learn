@@ -9,4 +9,6 @@ def two_numbers(x:int,y:int):
     else:
         print('кроме единицы общих кратных нет')
 
+
 two_numbers(130,160)
+print(two_numbers.__annotations__)
