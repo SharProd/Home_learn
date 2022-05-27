@@ -35,13 +35,17 @@ def set_add(x:set)->set:
 @time_out
 def read_list(x:list)->list:
     print('read')
-    return x
+    for i in x:
+        print(i, end='')
+    print()
 
 
 @time_out
 def read_set(x: set) -> set:
     print('read')
-    return x
+    for i in x:
+        print(i, end='')
+    print()
 
 @time_out
 def clear_list(x:list)->list:
