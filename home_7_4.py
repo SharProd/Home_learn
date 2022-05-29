@@ -13,10 +13,10 @@ def like_this(lisT:list)->str:
     elif len(lisT)==1:
         print(f"{lisT[0]} likes this")
     elif len(lisT)==2:
-        print(f'{lisT[0]}, {lisT[1]} like this')
+        print(f'{lisT[0]} and {lisT[1]} like this')
     elif len(lisT)==3:
-        print(f'{lisT[0]}, {lisT[1]} and {lisT[2]} others like this')
+        print(f'{lisT[0]}, {lisT[1]} and {lisT[2]} like this')
     elif len(lisT)>3:
         print(f'{lisT[0]}, {lisT[1]} and {len(lisT[2:])} others like this')
 
-like_this(["Alex", "Jacob", "Mark",'Max'])
+like_this(["Alex", "Jacob", "Mark", "Max"])

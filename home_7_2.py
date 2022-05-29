@@ -20,3 +20,12 @@ def random_list_edit()->list:
 random_list_edit()
 
 
+def random_phone()->str:
+    list_random_number = list(str(randint(0,9)) for i in range(12))
+    phone = "+{region}({code}){telephone}".format(region = ''.join(list_random_number[0:3])
+                                                 ,code = ''.join(list_random_number[3:5])
+                                                 ,telephone = ''.join(list_random_number[5:]))
+    return phone
+
+
+print(random_phone())

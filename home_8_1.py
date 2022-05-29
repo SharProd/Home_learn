@@ -8,18 +8,16 @@ frame(['Create', 'a', 'frame'], '+') ->
 ++++++++++"""
 
 
-def frame(string:str)->str:
+def frame(string:str,simbol:str)->str:
     split_string_list = list(i for i in  string.split(' ') if i!='')
-    print(split_string_list)
-
     max_string_value = len(max(split_string_list,key=lambda x:len(x)))
-    print(max_string_value)
-    text_print = f'++{max_string_value*"+"}++\n'
+    text_print = f'{simbol*2}{max_string_value*simbol}{simbol*2}\n'
     for item in split_string_list:
         x = max_string_value
-        text_print+=f'+ {item:<{x}} +\n'
-    text_print+= f'++{max_string_value*"+"}++'
-    print(text_print)
+        text_print+=f'{simbol} {item:<{x}} {simbol}\n'
+    text_print+= f'{simbol*2}{max_string_value*simbol}{simbol*2}'
+    return text_print
 
 
-frame('create a frame')
+print(frame('create a frame home   work','#'))
+print(frame.__annotations__)
