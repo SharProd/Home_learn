@@ -7,6 +7,7 @@ frame(['Create', 'a', 'frame'], '+') ->
 + frame  +
 ++++++++++"""
 
+
 def frame(string:str)->str:
     split_string_list = list(i for i in  string.split(' ') if i!='')
     print(split_string_list)
@@ -19,4 +20,6 @@ def frame(string:str)->str:
         text_print+=f'+ {item:<{x}} +\n'
     text_print+= f'++{max_string_value*"+"}++'
     print(text_print)
+
+
 frame('create a frame')
