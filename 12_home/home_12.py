@@ -1,4 +1,4 @@
-import datetime
+
 from datetime import date
 
 class User:
@@ -20,8 +20,8 @@ class User:
         return self.email_adress
 
     def birth_year(self):
-        year = datetime.date.year()
-        return self.age-year
+        year_of_birth = date.today()
+        return year_of_birth.year - self.age
 
     def policeman():
         policeman = User('Pit','Pat',43,'Great Britan','Man','Policeman')
@@ -36,6 +36,8 @@ class User:
         return doctor
 
 jack = User('Jack','Spit',35,'China','Man','Driver')
+#jack.email()
+print(jack.birth_year())
 print(jack)
 print(User.doctor())
 print(User.policeman())
