@@ -1,5 +1,5 @@
 class Human:
-    country = "USSR"
+    __country = "USSR"
     def __init__(self,name,age,weight,height):
         self.name = name
         self.age = age
@@ -65,14 +65,16 @@ class Doctor(Worker):
 
 jack = Human('Jack',58,80,182)
 print(jack)
-print(jack.country)
+
 
 mikki = Kid(3200,'Jessi','Fred','Mikki',2,5,50)
 print(mikki)
-print(mikki.country)
+
 print(jack+mikki)
 print(jack==mikki)
+print(Doctor.mro())
 
+print(Human._Human__country)
 
 
 

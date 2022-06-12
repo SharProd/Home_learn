@@ -1,5 +1,8 @@
 
 class Car:
+    color = 'red'
+    type_car = 'truck'
+    year = 1997
     def __init__(self,color,type_car,year):
         self.color = color
         self.type_car = type_car
