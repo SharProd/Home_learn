@@ -9,7 +9,7 @@ def number_fuctorial_gen(n:int):
 def fub_number():
     a = 1
     b = 1
-    for i in range(1000):
+    for i in range(100):
         yield a
         a,b=b,a+b
 
