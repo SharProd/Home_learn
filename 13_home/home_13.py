@@ -9,12 +9,21 @@ def number_fuctorial_gen(n:int):
 def fub_number():
     a = 1
     b = 1
-    for i in range(100):
+    for i in range(100-2):
         yield a
         a,b=b,a+b
 
+
+def fub_number_default():
+    a = [1,1]
+    while len(a)<100:
+        x = a[-1]+a[-2]
+        a.append(x)
+    return  a
+
+a = fub_number_default()
+print(getsizeof(a))
 # for i in fub_number(100):
 #     print(i, end = ' ')
-print(getsizeof(fub_number))
-
-# print(number_fuctorial_gen(20))
+b = fub_number()
+print(getsizeof(b))
